@@ -1,12 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body{
-    background-image: url('https://4.bp.blogspot.com/-1ZcrMjvKs5U/V6HC_mJ0eUI/AAAAAAAAC34/6Lff-ascQ3IUBn59m5ptDe19pdT3JaUJACLcB/s1920/samsung-wallpapers-free-download7.jpg');
-    font-family:Arial black;
-    background-size: 200vh;
+    background-image:url('../img/fundo.jpg');
+    background-size: 400vh;
     height: 100vh;
+    font-family:arial black ;
+    font-size:12px;
+    }
+
+@media (min-width: 400px) {
+    body {
+    font-size:14px;
+    }
   }
-  
+
+  @media (min-width: 600px){
+      body {
+          font-size:18px;
+      }
+  }
+  header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .menu{
     background-color:#6495ED;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   .menu li{
     list-style:none;
@@ -15,7 +42,10 @@ body{
     display: flex; 
     justify-content: space-around;
   }
-  
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+  }
   a{
     color: #0000CD;
     text-decoration: none;
@@ -28,6 +58,15 @@ body{
     color:#191970;
     text-align: center;
   }
+  .site-title{
+      font-size:3em ;
+  }
+
   .site-subtitle{  
     font-style: italic;
+  }
+
+  .img-portfolio{
+    height:180px;
+    width:180px;
   }
